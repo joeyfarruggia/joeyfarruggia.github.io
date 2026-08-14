@@ -481,6 +481,93 @@ footer {
     line-height: 1.5;
 }
 
+/* Keeps the featured GitHub project readable without overflowing into the footer */
+#GitHub .Column-1 {
+    padding-top: 1.5%;
+}
+
+#GitHub .github-intro {
+    font-size: clamp(15px, 1.4vw, 20px);
+    line-height: 1.55;
+    margin: 0.5rem 0 0.75rem;
+}
+
+#GitHub .github-profile-link {
+    display: inline-block;
+    margin-top: 0.35rem;
+}
+
+#GitHub .featured-project {
+    margin: 0.75rem 1.5rem 0;
+    padding: 0.8rem 1rem;
+    background-color: white;
+    border-left: 5px solid darkslateblue;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    font-family: "Playwrite NZ Basic", sans-serif;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+#GitHub .featured-project-label,
+#GitHub .featured-project-description {
+    display: block;
+}
+
+#GitHub .featured-project-label {
+    margin-bottom: 0.2rem;
+    color: #4d4d4d;
+    font-family: Avant Garde, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+#GitHub .featured-project-title {
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    font-size: clamp(15px, 1.25vw, 18px);
+    font-weight: bold;
+}
+
+#GitHub .featured-project-description {
+    font-size: clamp(12px, 1vw, 15px);
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 700px) {
+    .Row .Column-1,
+    .Row .Column-2 {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .Row .Column-1 {
+        padding: 2rem 1rem;
+    }
+
+    .Row .Column-2 {
+        height: 300px;
+        padding: 1rem;
+    }
+
+    #About .Column-1 {
+        min-height: 0;
+    }
+
+    #GitHub .Column-1 {
+        min-height: 400px;
+    }
+
+    #GitHub .featured-project {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 520px;
+    }
+}
+
 /*END OF TABLE STYLING*/
 
 /*------------*/
