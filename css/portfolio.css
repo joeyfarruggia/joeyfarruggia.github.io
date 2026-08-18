@@ -529,6 +529,7 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
+
     .Row .Column-1,
     .Row .Column-2 {
         float: none;
@@ -789,6 +790,33 @@ button:hover,
 
     .form-container label,
     .form-container input[type=text],
+    .form-container input[type=tel],
+    .form-container input[type=email],
+    .form-container textarea {
+        width: 100%;
+        padding: .93vw;
+        margin: .6vw 0 .6vw 0;
+        border: 2px solid #c1ccdd;
+        border-radius: 8px;
+        background: #f4f7fc;
+        font-family: inherit;
+        font-size: 1vw;
+    }
+
+    .form-container input[type=text]:focus,
+    .form-container input[type=tel]:focus,
+    .form-container input[type=email]:focus,
+    .form-container textarea:focus {
+        outline: none;
+        border-color: darkslateblue;
+        box-shadow: 0 0 0 3px rgba(72, 61, 139, 0.2);
+        background: #ffffff;
+    }
+
+    .form-container textarea {
+        resize: vertical;
+    }
+
     .form-container button {
         font-size: 3.3vw;
     }

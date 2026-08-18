@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joey's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="css/portfolio.css?v=20260814-2">
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css?v=20260818-1">
 </head>
 
 <!--Body-->
@@ -142,12 +142,15 @@
             <p class="center github-intro">
                 You can view my coding projects on my Github profile here:
                 <br>
-                <a class="github-profile-link" href="https://github.com/joeyfarruggia" target="_blank">Joey Farruggia's GitHub</a>
+                <a class="github-profile-link" href="https://github.com/joeyfarruggia" target="_blank">Joey Farruggia's
+                    GitHub</a>
             </p>
             <div class="featured-project">
                 <span class="featured-project-label">Featured project:</span>
-                <a class="featured-project-title" href="https://github.com/joeyfarruggia/Python-Chatbot-Live-Project" target="_blank">Python Study Assistant ChatBot</a>
-                <span class="featured-project-description">A tested Python learning assistant with Rule-Based and NLP chat engines, desktop and web interfaces, and confidence-aware fallback behavior.</span>
+                <a class="featured-project-title" href="https://github.com/joeyfarruggia/Python-Chatbot-Live-Project"
+                    target="_blank">Python Study Assistant ChatBot</a>
+                <span class="featured-project-description">A tested Python learning assistant with Rule-Based and NLP
+                    chat engines, desktop and web interfaces, and confidence-aware fallback behavior.</span>
             </div>
         </div>
         <!--RIGHT COLUMN-->
@@ -161,16 +164,24 @@
     <div id="Contact">
         <button onclick="openForm()" class="Pop_Up_Button">Contact</button>
         <div class="form-popup" id="myForm">
-            <form action="mailto:joeyfarruggia66@gmail.com" method="POST" enctype="text/plain" class="form-container">
+            <form action="https://formspree.io/f/xvzbjwge" method="POST" class="form-container">
                 <h1>Contact Me</h1>
+
                 <label for="name"><b>Name</b></label>
-                <input type="text" placeholder="Your name here please" name="name" required>
+                <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name here please"
+                    required>
+
                 <label for="phone"><b>Phone</b></label>
-                <input type="text" placeholder="Your phone number here please" name="phone">
+                <input type="tel" id="phone" name="phone" autocomplete="tel"
+                    placeholder="Your phone number here please">
+
                 <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Your email here please" name="email" required>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="Your email here please"
+                    required>
+
                 <label for="message"><b>Message</b></label>
-                <input type="text" placeholder="Your message here please" name="message" required>
+                <textarea id="message" name="message" rows="4" placeholder="Your message here please"
+                    required></textarea>
 
                 <button type="submit" class="btn">Send</button>
                 <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
