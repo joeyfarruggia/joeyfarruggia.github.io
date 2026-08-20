@@ -140,6 +140,17 @@ footer {
     background-color: white;
 }
 
+footer p a {
+    color: darkslateblue;
+    font-weight: bold;
+    text-underline-offset: 3px;
+}
+
+footer p a:hover,
+footer p a:focus-visible {
+    color: darkolivegreen;
+}
+
 /*END OF GENERAL STYLING FOR PORTFOLIO WEBSITE*/
 
 /*------------*/
@@ -477,8 +488,85 @@ footer {
 }
 
 #About p {
+    margin: 0.25rem 0 0.5rem;
     font-size: 14px;
     line-height: 1.5;
+}
+
+#About h1 {
+    margin: 0 0 0.5rem;
+}
+
+/* LinkedIn and resume buttons */
+.professional-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 0.75rem 1.25rem 0;
+}
+
+.professional-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 9rem;
+    padding: 0.65rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: white;
+    font-family: "Playwrite NZ Basic", sans-serif;
+    font-size: clamp(0.8rem, 0.95vw, 1rem);
+    font-weight: bold;
+    letter-spacing: 0.04rem;
+    line-height: 1.25;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.22);
+    transition:
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+.professional-link--linkedin {
+    background-color: darkslateblue;
+    border-color: darkslateblue;
+}
+
+.professional-link--resume {
+    background-color: darkolivegreen;
+    border-color: darkolivegreen;
+}
+
+.professional-link--linkedin:hover,
+.professional-link--linkedin:focus-visible {
+    background-color: darkolivegreen;
+    border-color: darkolivegreen;
+}
+
+.professional-link--resume:hover,
+.professional-link--resume:focus-visible {
+    background-color: darkslateblue;
+    border-color: darkslateblue;
+}
+
+.professional-link:hover,
+.professional-link:focus-visible {
+    color: white;
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.28);
+    transform: translateY(-2px);
+}
+
+.professional-link:focus-visible {
+    outline: 3px solid bisque;
+    outline-offset: 3px;
+}
+
+.professional-link:active {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.22);
+    transform: translateY(0);
 }
 
 /* Keeps the GitHub content compact, centered, and clear of the footer */
@@ -558,6 +646,10 @@ footer {
         margin-right: auto;
         margin-left: auto;
         max-width: 520px;
+    }
+
+    .professional-link {
+        width: min(100%, 15rem);
     }
 }
 
